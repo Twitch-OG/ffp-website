@@ -26,8 +26,8 @@ export default function Nav() {
           <Image
             src="/logo-footer.png"
             alt="Field Force Pro"
-            height={72}
-            width={72}
+            height={120}
+            width={120}
             style={{ objectFit: "contain", mixBlendMode: "screen", filter: "brightness(1.3) contrast(1.1)" }}
             priority
           />
