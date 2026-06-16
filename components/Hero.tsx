@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="hero" style={{ paddingTop: "10rem", paddingBottom: "7rem", position: "relative", overflow: "hidden" }}>
+    <section id="hero" style={{ paddingTop: "8rem", paddingBottom: "7rem", position: "relative", overflow: "hidden" }}>
       {/* Glow background */}
       <div style={{
         position: "absolute", top: "10%", left: "50%", transform: "translateX(-50%)",
