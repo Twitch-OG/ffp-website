@@ -22,13 +22,13 @@ export default function Nav() {
         </div>
 
         {/* Center — logo */}
-        <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", height: "80px", overflow: "hidden" }}>
           <Image
-            src="/logo-footer.png"
+            src="/header image cropped.png"
             alt="Field Force Pro"
-            height={120}
-            width={120}
-            style={{ objectFit: "contain", mixBlendMode: "screen", filter: "brightness(1.3) contrast(1.1)" }}
+            height={110}
+            width={300}
+            style={{ objectFit: "cover", objectPosition: "center top", mixBlendMode: "screen", filter: "brightness(1.2)", marginTop: "0px" }}
             priority
           />
         </Link>
