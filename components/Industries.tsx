@@ -1,3 +1,4 @@
+"use client";
 const industries = [
   { icon: "❄️", name: "HVAC & Refrigeration" },
   { icon: "🔧", name: "Plumbing" },

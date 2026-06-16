@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
         "X-Title": "Field Force Pro",
       },
       body: JSON.stringify({
-        model: "meta-llama/llama-3.1-8b-instruct:free",
+        model: "openrouter/owl-alpha",
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           ...messages,
