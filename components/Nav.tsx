@@ -24,7 +24,7 @@ export default function Nav() {
         {/* Center — logo */}
         <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", height: "80px", overflow: "hidden" }}>
           <Image
-            src="/header image cropped.png"
+            src="/logo-nav.png"
             alt="Field Force Pro"
             height={110}
             width={300}
