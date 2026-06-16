@@ -1,13 +1,12 @@
 "use client";
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer style={{ borderTop: "1px solid var(--border)", padding: "2.5rem 0", background: "var(--surface)" }}>
       <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
-        <div>
-          <span style={{ fontWeight: 800, fontSize: "1.1rem", color: "var(--text)", letterSpacing: "-0.03em" }}>
-            Field Force <span style={{ color: "var(--accent)" }}>Pro</span>
-          </span>
-          <p style={{ color: "var(--muted)", fontSize: "0.8rem", marginTop: "0.25rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <Image src="/logo-footer.png" alt="Field Force Pro" height={52} width={52} style={{ objectFit: "contain" }} />
+          <p style={{ color: "var(--muted)", fontSize: "0.8rem" }}>
             by Axiom Forge Architects
           </p>
         </div>

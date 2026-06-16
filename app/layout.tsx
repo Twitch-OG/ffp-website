@@ -4,11 +4,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Field Force Pro — Field Service Software for the Trades",
   description: "Your data. Your server. Your business. Field service management software built for home service contractors — without the enterprise price tag.",
+  icons: {
+    icon: "/logo-icon.png",
+    apple: "/logo-icon.png",
+  },
   openGraph: {
     title: "Field Force Pro",
     description: "Field service software built for the trades.",
     url: "https://myfieldforcepro.com",
     siteName: "Field Force Pro",
+    images: ["/logo-icon.png"],
   },
 };
 
