@@ -34,18 +34,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
         />
 
-        {/* ── CRM Chat Widget (GoHighLevel) ──────────────────────────────
-            TODO: Replace PASTE_WIDGET_ID_HERE with the actual widget ID
-            from CRM → Settings → Chat Widget → Get Code
-            Then uncomment the two Script tags below.
-        <Script id="crm-widget-config" strategy="afterInteractive">
-          {`window.hl_chat_widget_id = "PASTE_WIDGET_ID_HERE";`}
-        </Script>
+        {/* ── GHL Chat Widget ── */}
         <Script
           src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a33099b0e84ef9ef9957bfe"
           strategy="afterInteractive"
         />
-        ───────────────────────────────────────────────────────────────── */}
       </body>
     </html>
   );
