@@ -28,6 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        {/* ── GHL Calendar Embed Script ── */}
+        <Script
+          src="https://links.axiomforgearchitects.com/js/embed.js"
+          strategy="afterInteractive"
+        />
+
         {/* ── CRM Chat Widget (GoHighLevel) ──────────────────────────────
             TODO: Replace PASTE_WIDGET_ID_HERE with the actual widget ID
             from CRM → Settings → Chat Widget → Get Code

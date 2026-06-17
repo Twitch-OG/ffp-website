@@ -76,9 +76,10 @@ export default function Contact() {
             {/* GHL Booking Calendar */}
             <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "1.25rem", overflow: "hidden", marginBottom: "1.5rem" }}>
               <iframe
-                src="https://api.leadconnectorhq.com/widget/booking/OxsUF1oqF1pURgnwWklY"
+                src="https://links.axiomforgearchitects.com/widget/booking/OxsUF1oqF1pURgnwWklY"
                 style={{ width: "100%", height: "680px", border: "none" }}
                 scrolling="no"
+                id="msgsndr-calendar"
                 title="Book a Demo — Field Force Pro"
               />
             </div>
