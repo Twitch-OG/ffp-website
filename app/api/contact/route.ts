@@ -10,14 +10,27 @@ export async function POST(req: NextRequest) {
 
   const contactEmail = process.env.CONTACT_EMAIL ?? "demo@myfieldforcepro.com";
 
-  // If a webhook URL is configured, POST to it (e.g. Make.com, Zapier, n8n)
-  const webhookUrl = process.env.CONTACT_WEBHOOK_URL;
+  // Fire to CRM (GoHighLevel) inbound webhook — set CRM_WEBHOOK_URL in Vercel env vars
+  const webhookUrl = process.env.CRM_WEBHOOK_URL ?? process.env.CONTACT_WEBHOOK_URL;
   if (webhookUrl) {
+    const [firstName, ...rest] = (name as string).trim().split(" ");
+    const lastName = rest.join(" ") || "";
     try {
       await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, company, email, phone, trade, personnel, message, submittedAt: new Date().toISOString() }),
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          phone: phone ?? "",
+          company,
+          trade,
+          personnel: personnel ?? "",
+          message: message ?? "",
+          submittedAt: new Date().toISOString(),
+          source: "FFP Website — Book a Demo",
+        }),
       });
     } catch {
       // webhook failed — don't block the user response

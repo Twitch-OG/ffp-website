@@ -71,7 +71,22 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — form */}
+          {/* Right — calendar + form */}
+          <div>
+            {/* GHL Booking Calendar */}
+            <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "1.25rem", overflow: "hidden", marginBottom: "1.5rem" }}>
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/booking/OxsUF1oqF1pURgnwWklY"
+                style={{ width: "100%", height: "680px", border: "none" }}
+                scrolling="no"
+                title="Book a Demo — Field Force Pro"
+              />
+            </div>
+
+            <p style={{ textAlign: "center", color: "var(--muted)", fontSize: "0.8rem", marginBottom: "1.5rem" }}>
+              — or fill out the form below and we&apos;ll reach out within one business day —
+            </p>
+
           <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "1.25rem", padding: "2rem" }}>
             {status === "done" ? (
               <div style={{ textAlign: "center", padding: "3rem 1rem" }}>
@@ -161,6 +176,7 @@ export default function Contact() {
               </form>
             )}
           </div>
+          </div>{/* end outer right col */}
         </div>
       </div>
 
