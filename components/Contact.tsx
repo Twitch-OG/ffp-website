@@ -77,11 +77,12 @@ export default function Contact() {
             <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "1.25rem", overflow: "hidden", marginBottom: "1.5rem" }}>
               <iframe
                 src="https://links.axiomforgearchitects.com/widget/booking/OxsUF1oqF1pURgnwWklY"
-                style={{ width: "100%", height: "680px", border: "none" }}
+                style={{ width: "100%", height: "680px", border: "none", overflow: "hidden" }}
                 scrolling="no"
                 id="msgsndr-calendar"
                 title="Book a Demo — Field Force Pro"
               />
+              <script src="https://links.axiomforgearchitects.com/js/embed.js" type="text/javascript" async />
             </div>
 
             <p style={{ textAlign: "center", color: "var(--muted)", fontSize: "0.8rem", marginBottom: "1.5rem" }}>
