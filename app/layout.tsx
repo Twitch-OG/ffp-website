@@ -25,10 +25,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-      </head>
-      <body>
-        {children}
-        {/* ── Google Analytics ── */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EWNLBQSQCR"
           strategy="afterInteractive"
@@ -39,7 +35,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config', 'G-EWNLBQSQCR');
         `}</Script>
-
+      </head>
+      <body>
+        {children}
         {/* ── GHL Calendar Embed Script ── */}
         <Script
           src="https://links.axiomforgearchitects.com/js/embed.js"
