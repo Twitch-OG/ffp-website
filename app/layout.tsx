@@ -28,6 +28,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        {/* ── Google Analytics ── */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-EWNLBQSQCR"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EWNLBQSQCR');
+        `}</Script>
+
         {/* ── GHL Calendar Embed Script ── */}
         <Script
           src="https://links.axiomforgearchitects.com/js/embed.js"
